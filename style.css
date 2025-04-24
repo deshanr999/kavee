@@ -1,0 +1,107 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Delicious Handrawn", cursive;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: url('Picsart_25-04-23_22-39-29-984.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 30px;
+  border-radius: 20px;
+  z-index: 1;
+  max-width: 90%;
+}
+
+#message {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #ff0066;
+  max-width: 200px;
+}
+
+#heart-btn {
+  font-size: 2rem;
+  margin: 15px 0;
+  border: none;
+  background-color: #ff006600;
+  outline: none;
+}
+
+#gif {
+  width: 200px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+#controls button,
+#final-question button {
+  margin: 5px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff3399;
+  color: white;
+}
+
+#final-question {
+  margin-top: 20px;
+}
+
+#final-question p{
+  color: #ff0066;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* Sticky Note */
+.sticky-note {
+  position: fixed;
+  background: url(https://media.istockphoto.com/id/1497523070/photo/closeup-of-white-crumpled-paper-for-texture-background.jpg?s=612x612&w=0&k=20&c=c8slq7NfFhuJzbY4NfajN1gIF90S3NwFF5BrNpqiZME=);
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  transform: rotate(-2deg);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  animation: float 3s infinite ease-in-out;
+}
+
+.sticky-note img {
+  width: calc(100% - 20px);
+  height: auto;
+  margin: 10px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: rotate(-2deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(2deg) translateY(-5px);
+  }
+}

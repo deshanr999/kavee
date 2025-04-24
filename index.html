@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <p id="click-text">Click the heart</p>
+    <button id="heart-btn">❤️</button>
+
+    <p id="message" class="hidden"></p>
+    <img id="gif" class="gif hidden" src="" alt="" />
+
+    <div id="controls" class="hidden">
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+    </div>
+
+    <div id="final-question" class="hidden">
+      <p>Will you be my little one again? 🥺💕</p>
+      <button id="yes-btn">Yes</button>
+      <button id="no-btn">No</button>
+    </div>
+  </div>
+
+  <!-- Sticky Notes -->
+  <div class="sticky-note" style="top: 3%; right: 5%;">
+    <img src="IMG-20230214-WA0048.jpg" alt="Love" />
+  </div>
+  <div class="sticky-note" style="top: 40%; left: 4%;">
+    <img src="IMG-20230214-WA0040.jpg" alt="Love" />
+  </div>
+  <div class="sticky-note" style="top: 60%; right: 10%;">
+    <img src="IMG-20230214-WA0042.jpg" alt="Love" />
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
