@@ -1,4 +1,15 @@
 // script.js
+window.onload = () => {
+  const loader = document.getElementById('loader');
+
+  loader.style.opacity = '0';
+  loader.style.visibility = 'hidden';
+
+  // Optional: after transition, remove from DOM
+  setTimeout(() => loader.remove(), 800);
+};
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const messages = [
     { text: "I just want to tell you somthing ", gif: "gif1.gif" },
